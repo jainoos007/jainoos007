@@ -6,7 +6,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=jainoos007&label=Profile%20views&color=0e75b6&style=flat" alt="jainoos007" /> </p>
 
-- 🌱 I’m currently learning **Machine Learning and Full Stack Development**
+- 🌱 I’m currently learning **Full Stack Development**
 
 - 📫 How to reach me **ammjainoos@gmail.com**
 
