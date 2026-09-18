@@ -10,8 +10,6 @@
 
 - 📫 How to reach me **ammjainoos@gmail.com**
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/1k9MU6A5cmIzjwEFWl0Cb7U-8NuDyLhuV/view?usp=sharing](https://drive.google.com/file/d/1k9MU6A5cmIzjwEFWl0Cb7U-8NuDyLhuV/view?usp=sharing)
-
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/jainoos7979" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="jainoos7979" height="30" width="40" /></a>
