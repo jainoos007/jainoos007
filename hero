@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" font-family="'JetBrains Mono','SF Mono',Consolas,'Liberation Mono',monospace">
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#0e2350" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00aeff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00aeff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bar" x1="0" x2="1">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#00aeff"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="900" height="380" rx="16"/></clipPath>
+    <clipPath id="c1"><rect x="40" y="62" height="30" width="0"><animate attributeName="width" from="0" to="140" begin="0.4s" dur="0.6s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c4"><rect x="40" y="184" height="30" width="0"><animate attributeName="width" from="0" to="220" begin="2.6s" dur="0.7s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c6"><rect x="40" y="252" height="30" width="0"><animate attributeName="width" from="0" to="210" begin="4.4s" dur="0.7s" fill="freeze"/></rect></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="900" height="380" fill="#050f2c"/>
+    <rect width="900" height="380" fill="url(#grid)" opacity="0.7"/>
+
+    <!-- orbit -->
+    <g transform="translate(760 205)">
+      <circle r="150" fill="url(#glow)">
+        <animate attributeName="r" values="140;160;140" dur="6s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="96" fill="none" stroke="#1e3a6b" stroke-width="1"/>
+      <g>
+        <circle r="96" fill="none" stroke="#00aeff" stroke-width="1.5" stroke-dasharray="4 14" opacity="0.8"/>
+        <circle cx="96" r="4" fill="#00aeff"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
+      </g>
+      <g>
+        <circle r="62" fill="none" stroke="#3b82f6" stroke-width="1" stroke-dasharray="2 8" opacity="0.7"/>
+        <circle cx="-62" r="3" fill="#7dd3fc"/>
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="11s" repeatCount="indefinite"/>
+      </g>
+      <circle r="34" fill="#071a42" stroke="#00aeff" stroke-width="1.5"/>
+      <text text-anchor="middle" y="7" font-size="20" font-weight="700" fill="#00aeff">&lt;/&gt;</text>
+    </g>
+
+    <!-- title bar -->
+    <rect width="900" height="40" fill="#071637"/>
+    <line x1="0" y1="40" x2="900" y2="40" stroke="#0e2350"/>
+    <circle cx="22" cy="20" r="6" fill="#1e3a6b"/>
+    <circle cx="42" cy="20" r="6" fill="#2b5297"/>
+    <circle cx="62" cy="20" r="6" fill="#00aeff"/>
+    <text x="450" y="25" text-anchor="middle" font-size="12" fill="#5b6b8c">jainoos@dev: ~</text>
+
+    <!-- whoami -->
+    <g clip-path="url(#c1)" font-size="16">
+      <text x="40" y="82"><tspan fill="#00aeff">❯</tspan><tspan fill="#e6edf3" dx="10">whoami</tspan></text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="1.2s" dur="0.6s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" begin="1.2s" dur="0.6s" fill="freeze"/>
+      <text x="40" y="132" font-size="38" font-weight="800" fill="#ffffff" letter-spacing="1">Mohammed Jainoos</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="1.8s" dur="0.6s" fill="freeze"/>
+      <text x="40" y="162" font-size="15" fill="#8b9bb4">junior full stack developer <tspan fill="#00aeff">@</tspan> nexus aml</text>
+    </g>
+
+    <!-- stack -->
+    <g clip-path="url(#c4)" font-size="16">
+      <text x="40" y="204"><tspan fill="#00aeff">❯</tspan><tspan fill="#e6edf3" dx="10">cat stack.lock</tspan></text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="3.4s" dur="0.6s" fill="freeze"/>
+      <text x="40" y="232" font-size="15" fill="#7dd3fc">next.js · typescript · node.js · prisma · postgres</text>
+    </g>
+
+    <!-- deploy -->
+    <g clip-path="url(#c6)" font-size="16">
+      <text x="40" y="272"><tspan fill="#00aeff">❯</tspan><tspan fill="#e6edf3" dx="10">deploy --prod</tspan></text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="5.2s" dur="0.2s" fill="freeze"/>
+      <rect x="40" y="288" width="300" height="8" rx="4" fill="#0e2350"/>
+      <rect x="40" y="288" width="0" height="8" rx="4" fill="url(#bar)">
+        <animate attributeName="width" from="0" to="300" begin="5.3s" dur="1.8s" fill="freeze"/>
+      </rect>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="7.2s" dur="0.5s" fill="freeze"/>
+      <text x="354" y="297" font-size="13" fill="#34d399">✓ live</text>
+      <text x="40" y="324" font-size="14" fill="#8b9bb4">→ <tspan fill="#e6edf3">jainoos.xyz</tspan></text>
+    </g>
+
+    <!-- idle prompt -->
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="7.8s" dur="0.1s" fill="freeze"/>
+      <text x="40" y="358" font-size="16" fill="#00aeff">❯</text>
+      <rect x="58" y="345" width="10" height="17" fill="#00aeff">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="899" height="379" rx="16" fill="none" stroke="#1e3a6b"/>
+</svg>
