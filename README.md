@@ -1,5 +1,5 @@
 <a href="https://jainoos.xyz">
-  <img src="./assets/hero.svg" width="100%" alt="Mohammed Jainoos — junior full stack developer @ nexus aml" />
+  <img src="./hero.svg" width="100%" alt="Mohammed Jainoos — junior full stack developer @ nexus aml" />
 </a>
 
 <p align="right">
